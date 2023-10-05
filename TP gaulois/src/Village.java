@@ -23,4 +23,16 @@ public class Village {
         this.neighborhoods.add(new Neighborhood(name));
     }
 
+    public ArrayList<Neighborhood> getNeighborhoods() {
+        return neighborhoods;
+    }
+
+    public Neighborhood getNeighborhood(String name) {
+        for (Neighborhood neighborhood: neighborhoods) {
+            if (neighborhood.getName() == name) {
+                return neighborhood;
+            }
+        }
+        return null;
+    }
 }
