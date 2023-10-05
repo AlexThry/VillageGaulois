@@ -26,6 +26,15 @@ public class Neighborhood {
         return villagers;
     }
 
+    public Villager getVillager(int NNIG) {
+        for (Villager villager: villagers) {
+            if (villager.getNNIG() == NNIG) {
+                return villager;
+            }
+        }
+        return null;
+    }
+
     public void setName(String name) {
         this.name = name;
     }
